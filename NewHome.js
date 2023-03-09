@@ -2,7 +2,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     createInnerHtml();
 });
 
-const createInnerHtml = () => {
+const createInnerHtml = () => 
+{
     const headerHtml = "<th></th><th>Name</th><th>Gender</th><th>Department</th>" + 
                         "<th>Salary</th><th>Start Date</th><th>Actions</th>";
     const innerHtml = `${headerHtml}
@@ -20,4 +21,34 @@ const createInnerHtml = () => {
 </tr>
     `;
     document.querySelector('#table-display').innerHTML = innerHtml;
+}
+const createEmployeePayrollJSON = () => {
+    let empPayrollListLocal =[
+        {
+            _name: 'Narayan Mahadevan',
+            _gender: 'male',
+            _department: [
+                'Engineering',
+                'Finance'
+            ],
+            _salary:'500000',
+            _startDate: '29 Oct 2019',
+            _note:'',
+            _id: new Date().getTime(),
+            _profilePic: '../assets/profile-images/Ellipse -2.png'
+        },
+        {
+            _name: 'Rashmika Mandanna',
+            _gender: 'Female',
+            _department: [
+                'Finance'
+            ],
+            _salary:'5000000',
+            _startDate: '29 Sept 2020',
+            _note:'',
+            _id: new Date().getTime(),
+            _profilePic: '../assets/profile-images/Ellipse -1.png'
+        }
+    ];
+    return empPayrollListLocal;
 }
