@@ -35,7 +35,7 @@ const createEmployeePayrollJSON = () => {
             _startDate: '29 Oct 2019',
             _note:'',
             _id: new Date().getTime(),
-            _profilePic: '../assets/profile-images/Ellipse -2.png'
+            _profilePic: '../Day45-EmployeePayroll/assets/profile-images/Ellipse -2.png'
         },
         {
             _name: 'Rashmika Mandanna',
@@ -47,7 +47,7 @@ const createEmployeePayrollJSON = () => {
             _startDate: '29 Sept 2020',
             _note:'',
             _id: new Date().getTime(),
-            _profilePic: '../assets/profile-images/Ellipse -1.png'
+            _profilePic: '../Day45-EmployeePayroll/assets/profile-images/Ellipse -1.png'
         }
     ];
     return empPayrollListLocal;
